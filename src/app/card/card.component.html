@@ -1,0 +1,9 @@
+<p [ngStyle]="{color: card.title.length > 5 ? 'red' : 'black'}">{{ card.title }}</p>
+<!--<pre>{{obj | json}}</pre>-->
+<img [src]="imgUrl1" alt="img">
+<button [disabled]="disable">Hurt</button>
+<button (click)="changeVoice()">Change</button>
+<button (click)="disable = false">Enable</button>
+<button (click)="disable = true">Disable</button>
+<!--<input type="text" #myInput (input)="inputHandler(myInput.value)" [value]="voice">-->
+<input type="text" [(ngModel)]="card.title">
